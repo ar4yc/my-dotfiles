@@ -9,7 +9,7 @@
 ### ### Apply configs
 #### Clone the repo: #
 ```bash
-git clone https://github.com/ar4yc/my-dotfiles.git && cp -r my-dotfiles/* ~/
+git clone https://github.com/ar4yc/my-dotfiles.git && cp -r my-dotfiles/.* ~/
 ```
 
 #### Installation hypr-dock #
