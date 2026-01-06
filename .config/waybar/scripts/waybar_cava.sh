@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# Minimal Waybar cava script
-# Author: Axell-style minimal rewrite
 
-# Default values
 BAR="▁▂▃▄▅▆▇█"
 WIDTH=14
 RANGE=
@@ -27,7 +24,6 @@ EOF
     exit 1
 }
 
-# Parse arguments
 while [[ $# -gt 0 ]]; do
     case $1 in
         --help) usage ;;
@@ -47,10 +43,9 @@ BAR_LENGTH=${#BAR}
 WIDTH=${WIDTH:-$BAR_LENGTH}
 RANGE=${RANGE:-$((BAR_LENGTH - 1))}
 
-# Standby bar logic
 case $STANDBY in
     0) STB='' ;;
-    1) STB="‎ " ;; # Invisible
+    1) STB="‎ " ;;
     2) STB="${BAR: -1}" ;;
     3) STB="${BAR:0:1}" ;;
     *) STB="$STANDBY" ;;
@@ -59,7 +54,6 @@ esac
 ASCII_PREDICT=$(printf '0%.0s' $(seq 1 "$WIDTH"))
 STB_ASCII="${ASCII_PREDICT//0/$STB}"
 
-# Build sed dictionary
 SED_DICT="s/;//g"
 for ((i=0; i<WIDTH || i<BAR_LENGTH; i++)); do
     if (( i < BAR_LENGTH )); then
@@ -68,7 +62,6 @@ for ((i=0; i<WIDTH || i<BAR_LENGTH; i++)); do
 done
 SED_DICT="$SED_DICT;s/$ASCII_PREDICT/$STB_ASCII/g"
 
-# Create minimal cava config
 CONFIG="/tmp/bar_cava_config"
 cat >"$CONFIG" <<EOF
 [general]
