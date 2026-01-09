@@ -3,7 +3,7 @@
 #### These dotfiles are made **specifically for 21:9 monitors (2560×1080)** #
 #### If you are using a **16:9 display**, you will need to manually adjust window rules #
 ##### What it looks like: ############
-![Uploading 2026-01-09_14-25.png…]()
+<img width="2559" height="1079" alt="2026-01-09_14-25" src="https://github.com/user-attachments/assets/719e5606-4a1f-4c6f-a9f6-c27cbf95a80d" />
 
 
 #### Clone dotfiles: #
