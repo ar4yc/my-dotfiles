@@ -50,16 +50,16 @@ window#waybar > box {
 
 #workspaces button.urgent {
   border-bottom: 2px solid @white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #workspaces button.urgent:nth-child(1) {
-  border-bottom: 1px solid @white;
-  border-radius: 0px 18px 0px 18px;
+  border-bottom: 2px solid @white;
+  border-radius: 0px 10px 0px 10px;
 }
 
 #workspaces button.urgent:nth-last-child(1) {
-  border-bottom: 1px solid @white;
+  border-bottom: 2px solid @white;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -127,7 +127,7 @@ window#waybar > box {
 
 #zvuk {
   color: @foreground;
-  padding: 0px 8px;
+  padding: 0px 0px;
 }
 
 #pulseaudio {
@@ -148,17 +148,18 @@ window#waybar > box {
 #language {
   font-weight: 700;
   color: @foreground;
+  padding: 0px 5px;
 }
 
 #bluetooth {
   font-family: "JetBrains Mono NerdFont";
-  padding: 0px 10px;
-  font-size: 14px;
+  padding: 0px 8px 0px 3px;
+  font-size: 12px;
 }
 
 #network {
   color: @foreground;
-  padding: 0px 0px 0px 3px;
+  padding: 0px 0px 0px 5px;
 }
 
 #tray {

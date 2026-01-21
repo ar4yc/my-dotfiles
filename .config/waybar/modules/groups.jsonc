@@ -43,7 +43,7 @@
 
   "group/righty": {
     "orientation": "horizontal",
-    "modules": ["custom/headset_battery","group/zvuk","hyprland/language","bluetooth","network"]
+    "modules": ["bluetooth","hyprland/language","group/zvuk","network"]
   },
 
   "group/temper": {
