@@ -9,7 +9,7 @@ git clone https://github.com/ar4yc/my-dotfiles.git && cp -r my-dotfiles/.config 
 ```
 #### Install Programs #
 ```bash
-yay -S waybar cava playerctl blueman dolphin xava swaync wofi kitty gtk3 gtk4 qt6ct archlinux-xdg-menu wl-clipboard wtype cliphist flameshot-git waypaper hyprpicker swww pavucontrol bluez bluez-utils alsa-utils pipewire pipewire-pulse wireplumber hyprpolkitagent zsh
+yay -S waybar cava playerctl blueman dolphin swaync wofi kitty gtk3 gtk4 qt6ct archlinux-xdg-menu wl-clipboard wtype cliphist flameshot-git waypaper hyprpicker swww pavucontrol bluez bluez-utils alsa-utils pipewire pipewire-pulse wireplumber hyprpolkitagent zsh
 ```
 #### Installation hypr-dock #
 ```bash
