@@ -1,6 +1,7 @@
 # My hyprland WM dotfiles
 ##### What it looks like: ############
-<img width="2559" height="1079" alt="2026-01-09_14-25" src="https://github.com/user-attachments/assets/719e5606-4a1f-4c6f-a9f6-c27cbf95a80d" />
+<img width="2559" height="1079" alt="preview" src="https://github.com/user-attachments/assets/2ca99581-8b57-4b86-8261-4d8e559caee4" />
+
 
 
 #### Clone dotfiles: #
