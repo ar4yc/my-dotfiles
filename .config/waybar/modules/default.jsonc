@@ -1,0 +1,174 @@
+{
+  "custom/start": {
+    "format": "{icon}",
+    "format-icons": {
+    "default": ["󰣇"]
+    },
+    "on-click": "wofi"
+  },
+  
+ "hyprland/workspaces": {
+    "on-click": "activate",
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5" 
+    },
+    "format": "{icon}",
+    "format-active": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "active": ""
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{initialTitle}",
+    "max-length": 35,
+    "rewrite": {
+      "": "Hyprland",
+      "kitty": "Terminal",
+      "64Gram": "Telegram",
+      "com.github.th_ch.youtube_music": "Youtube Music",
+      ".*— Dolphin.*": "Dolphin",
+      ".*qBittorrent.*": "qBittorrent",
+      ".*Discord.*": "Discord",
+      ".*OBS.*": "OBS Studio",
+      "hyprland-share-picker": "Share"
+    },
+    "separate-outputs": false
+   },
+
+  "cpu": {
+    "format": "<span color=\"#ced9ed\"></span>  {usage}%",
+    "tooltip": false,
+    "interval": 1
+  },
+
+  "memory": {
+    "format": "<span color=\"#ced9ed\"></span>  {percentage}%",
+    "interval": 1
+  },
+
+  "custom/cava": {
+	  "format": "{}",
+	  "exec": "~/.config/waybar/scripts/waybar_cava.sh",
+	  "restart-interval": 1,
+	  "hide-empty": true
+  },
+
+  "mpris": {
+    "max-length": 50,
+    "format": "  ⏸  {title} ",
+    "format-paused": "    {title} ",
+    "tooltip-format": "{player} — {artist}\n{title} ",
+  }, 
+
+  "clock#simple": {
+    "format": "{:%H:%M:%S}",
+    "tooltip": false,
+    "interval": 1
+  },
+
+  "clock": {
+    "format": "{:L%a %d, %b %Y}",
+    "tooltip": true,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%d.%m.%Y}"
+  },
+  
+  "bluetooth": {
+    "format": "{}", 
+    "format-on": "",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "{device_alias}",
+    "format-connected-battery": "{device_alias}   {device_battery_percentage}%",
+    "tooltip-format": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t {device_battery_percentage}%",
+    "on-click": "overskride"
+  },
+
+  "hyprland/language": {
+    "format": "<span color=\"#ced9ed\"></span>  {}",
+    "format-en": "EN",
+    "format-ru": "RU"
+  },
+
+  "pulseaudio#output": {
+    "format": "<span color=\"#ced9ed\">{icon}</span>  {volume}",
+    "format-muted": "<span></span>  {volume}",
+    "format-icons": {
+      "default": ["","","","",""]
+    },
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+
+  "pulseaudio#input": {
+    "format": "{format_source}",
+    "format-source": "<span color=\"#ced9ed\"></span> {volume}",
+    "format-source-muted": "<span></span> {volume}",
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 10%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 10%-"
+  },
+
+  "network": {
+    "format": "{essid}",
+    "format-wifi": "<span color=\"#ced9ed\">  {essid}</span>",
+    "format-ethernet": "<span color=\"#ced9ed\">  {essid}</span>",
+    "format-disconnected": "<span color=\"#ced9ed\">  Disconnected</span>",
+    "tooltip-format": "{ipaddr}/{cidr}",
+    "on-click": "nm-connection-editor"
+  },
+
+  "custom/cpu": {
+     "exec": "sensors | awk '/Package id 0:/ {print substr($4,2,length($4)-5)}'",
+    "interval": 1,
+    "format": " {}°C",
+    "tooltip": false
+  },
+
+  "custom/gpu": {
+    "exec": "echo  $(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)°C",
+    "interval": 1,
+    "format": "{}",
+    "tooltip": false
+  },
+
+  "tray": {
+    "spacing": 7,
+    "swap-icon-label": true
+  },
+
+  "custom/noscreenshare": {
+   "exec": "~/.config/waybar/scripts/toggle_noscreenshare.sh",
+   "on-click": "~/.config/waybar/scripts/toggle_noscreenshare.sh toggle && pkill -SIGRTMIN+4 waybar",
+   "signal": 4,
+   "interval": "once",
+   "return-type": "json",
+   "format": "{icon}",
+   "format-icons": {
+    "off": "󱙝",
+    "on": "󰗹"
+   },
+   "tooltip": false
+  },
+
+  "custom/power": {
+   "interval": "once",
+   "format": "⏻ ",
+   "on-click": "poweroff"
+  }
+}
