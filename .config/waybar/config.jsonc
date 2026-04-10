@@ -4,7 +4,7 @@
   "$HOME/.config/waybar/modules/default.jsonc"
 ],
   "position": "top",
-  "output": "DP-1",
+  "output": "*",
   "margin-left": 0,
   "margin-right": 0,
   "height": 29,
