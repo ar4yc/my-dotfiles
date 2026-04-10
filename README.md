@@ -21,7 +21,7 @@
 
 * #### Clone dotfiles: #
 ```bash
-git clone https://github.com/ar4yc/my-dotfiles.git && cp -r my-dotfiles/.config "$HOME/"
+git clone https://github.com/ar4yc/hypr-dotfiles.git && cp -r hypr-dotfiles/.config "$HOME/"
 ```
 * #### Install Programs #
 ```bash
