@@ -25,5 +25,5 @@ git clone https://github.com/ar4yc/hypr-dotfiles.git && cp -r hypr-dotfiles/.con
 ```
 * #### Install Programs #
 ```bash
-yay -S pavucontrol nm-applet waybar cava playerctl overskride-bin dolphin swaync wofi kitty gtk3 gtk4 qt6ct archlinux-xdg-menu wl-clipboard wtype cliphist flameshot-git swaybg waypaper hyprpicker hyprpolkitagent
+yay -S pavucontrol nm-applet overskride-bin waybar cava playerctl dolphin swaync wofi kitty gtk3 gtk4 qt6ct archlinux-xdg-menu wl-clipboard wtype cliphist flameshot-git swaybg waypaper hyprpicker hyprpolkitagent
 ```
