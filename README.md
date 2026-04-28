@@ -15,7 +15,7 @@
 ### Screenshots:
 <img width="2560" height="1080" alt="Preview1" src="https://github.com/user-attachments/assets/202a372b-0a83-4090-8906-dc08e4727c7f" />
 <br>
-<img width="2560" height="1080" alt="Preview3" src="https://github.com/user-attachments/assets/8d1324e5-42d7-41d9-8944-3b7980304438" />
+<img width="2560" height="1080" alt="Preview2" src="https://github.com/user-attachments/assets/8d1324e5-42d7-41d9-8944-3b7980304438" />
 
 ### Installation
 
